@@ -1,3 +1,4 @@
+/*
 * {
     margin: 0;
     padding: 0;
@@ -42,6 +43,72 @@ h1 {
 
 .square {
     width: 145px;
+    height: 145px;
+    border: 2px solid rgb(111, 112, 165);
+    background-color: #f5f5f5;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.restart-button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 20px;
+    border: 2px solid black;
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.game-container {
+    position: relative;
+    width: 450px;
+    margin: 20px auto;
+}
+
+.message {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.square {
+    width: 95px;
     height: 145px;
     border: 2px solid rgb(111, 112, 165);
     background-color: #f5f5f5;
